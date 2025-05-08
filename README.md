@@ -1,12 +1,53 @@
-# React + Vite
+# Interface para API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface desenvolvida em React utilizando a API pública de Dragon Ball.
 
-Currently, two official plugins are available:
+## 📌 Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto consiste em uma interface gráfica construída com React, que consome dados da API pública de Dragon Ball. O objetivo é fornecer uma visualização interativa das informações dos personagens, como nome, imagem, tipo e outras características relevantes.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **Vite**: Ferramenta de build e desenvolvimento rápido para projetos em React.
+- **ESLint**: Ferramenta para análise estática do código, garantindo a qualidade e consistência do código-fonte.
+
+## 🔧 Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Eduardogomes794/Interface-para-API.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd Interface-para-API
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+   O projeto estará disponível em `http://localhost:3000`.
+
+## 🧪 Testes
+
+Para rodar os testes, utilize o seguinte comando:
+
+```bash
+npm test
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
