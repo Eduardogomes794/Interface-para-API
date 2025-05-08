@@ -1,0 +1,184 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb; /* Fundo claro e neutro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #a0c4e0, #e0e0e0); /* Gradiente suave de azul e cinza claro */
+  overflow: hidden;
+}
+
+/* Estilizando o contêiner principal */
+#personagem-selection {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  text-align: center;
+  border: 2px solid #b0bec5; /* Borda cinza claro */
+}
+
+/* Estilizando o título */
+#personagem-selection label.titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #607d8b; /* Cinza azulado */
+  margin-bottom: 15px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Estilizando a label "Nome" dentro dos detalhes do personagem */
+#personagem-selection label.label-nome {
+  font-size: 20px;
+  font-weight: bold;
+  color: #607d8b; /* Cor mais forte para diferenciar a label de "Nome" */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: -10px;
+}
+
+/* Estilizando o campo de seleção */
+#personagem-selection select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #90a4ae; /* Borda cinza suave */
+  border-radius: 8px;
+  background-color: #f1f8e9; /* Fundo verde claro suave */
+  color: #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Efeito de hover no campo de seleção */
+#personagem-selection select:hover {
+  background-color: #e0f2f1; /* Alteração suave para um azul esverdeado claro */
+  border-color: #80cbc4; /* Borda mais forte ao passar o mouse */
+}
+
+/* Estilizando o botão */
+#personagem-selection button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffab40; /* Laranja suave */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alterando a cor do botão ao passar o mouse */
+#personagem-selection button:hover {
+  background-color: #fb8c00; /* Laranja mais intenso ao passar o mouse */
+  transform: translateY(-3px); /* Efeito de movimento ao passar o mouse */
+}
+
+/* Efeito de foco no botão */
+#personagem-selection button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 171, 64, 0.5); /* Sombras suaves laranja ao focar no botão */
+}
+
+/* Estilizando o input de palpite */
+#personagem-selection input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #90a4ae; /* Borda cinza suave */
+  border-radius: 8px;
+  margin-left: -15px;
+  margin-bottom: 20px;
+  background-color: #f1f8e9; /* Fundo verde claro suave */
+  color: #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Efeito de hover no input de palpite */
+#personagem-selection input:hover {
+  background-color: #e0f2f1; /* Alteração suave para um azul esverdeado claro */
+  border-color: #80cbc4; /* Borda mais forte ao passar o mouse */
+}
+
+/* Efeito de foco no input de palpite */
+#personagem-selection input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 171, 64, 0.5); /* Sombras suaves laranja ao focar no input */
+}
+
+/* Estilo para mensagens de erro ou carregamento */
+#personagem-selection p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilo para mensagens de erro */
+#personagem-selection .error {
+  color: #f44336; /* Vermelho suave para erro */
+  font-weight: bold;
+}
+
+/* Estilo para mensagens de carregamento */
+#personagem-selection .loading {
+  color: #64b5f6; /* Azul suave para carregamento */
+  font-weight: bold;
+}
+
+/* Estilo para a imagem do personagem */
+#character-image {
+  text-align: center;
+}
+
+#character-image img {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  user-select: none;
+}
+
+#personagem-selection {
+  margin-bottom: 20px;
+}
+
+#character-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Estilo para a div de detalhes do personagem */
+#personagem-selection #personagem-details {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333; /* Cor do texto para uma boa leitura */
+  text-align: left; /* Centraliza o texto */
+}
+
+/* Estilo para os parágrafos dos detalhes */
+#personagem-selection #personagem-details p {
+  margin: 8px 0;
+  line-height: 1.2; /* Melhor espaçamento entre as linhas */
+}
+
+/* Estilo para os textos em negrito (nome, raça e gênero) */
+#personagem-selection #personagem-details strong {
+  font-weight: bold;
+  color: #607d8b; /* Cor igual ao label */
+}
+
+/* Estilo para os detalhes de cada tipo de informação */
+#personagem-selection #personagem-details .detail-item {
+  margin: 0px 3.2px;
+  
+  font-size: 18px;
+  display: inline;
+}

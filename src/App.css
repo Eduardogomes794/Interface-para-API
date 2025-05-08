@@ -1,0 +1,98 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffebcd; /* Cor de fundo mais suave e quente */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #ffbb00, #ff6347); /* Gradiente de fundo */
+}
+
+/* Estilizando o contêiner principal */
+#personagem-selection {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  text-align: center;
+  border: 2px solid #ff6347; /* Borda colorida */
+}
+
+/* Estilizando o título */
+#personagem-selection label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6347; /* Cor vibrante */
+  margin-bottom: 15px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Estilizando o campo de seleção */
+#personagem-selection select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f8ff; /* Cor de fundo clara */
+  color: #333;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Efeito de hover no campo de seleção */
+#personagem-selection select:hover {
+  background-color: #ffebcd; /* Cor de fundo ao passar o mouse */
+  border-color: #ffbb00; /* Alteração da borda ao passar o mouse */
+}
+
+/* Estilizando o botão */
+#personagem-selection button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Alterando a cor do botão ao passar o mouse */
+#personagem-selection button:hover {
+  background-color: #ffbb00; /* Cor mais clara ao passar o mouse */
+  transform: translateY(-3px); /* Efeito de movimento ao passar o mouse */
+}
+
+/* Efeito de foco no botão */
+#personagem-selection button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 99, 71, 0.5); /* Sombras ao focar no botão */
+}
+
+/* Estilo para mensagens de erro ou carregamento */
+#personagem-selection p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilo para mensagens de erro */
+#personagem-selection .error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Estilo para mensagens de carregamento */
+#personagem-selection .loading {
+  color: #3498db;
+  font-weight: bold;
+}
